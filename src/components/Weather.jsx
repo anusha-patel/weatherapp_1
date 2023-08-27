@@ -44,6 +44,7 @@ const Weather = () => {
         ) : (
           <div className=' mt-10 text-center space-y-1'>
             <h2 className=' text-white text-xl'> <i></i> {city.name} </h2>
+            <h2 className=' text-white text-xl'> <i></i> {city.sys.country} </h2>
             <div className=' text-white text-xl'>  {city.weather.icon}</div>
             <h3 className=' text-white text-xl'>temperature:  {city.main.temp}°C</h3>
             <h3 className=' text-white text-xl'>{city.main.temp_min} °C Min | {city.main.temp_max} °C Max</h3>
